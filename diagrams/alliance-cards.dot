@@ -20,9 +20,9 @@ digraph {
 
     hand -> slot [label="secret"]
 
-    hand -> slot [label="conspiracy"]
+    hand -> slot [label="set up\nconspiracy"]
 
-    slot -> discard [label="perform\nconspiracy"]
+    slot -> hand [label="performed\nconspiracy"]
 
     slot -> discard [label="incite mob"]
 
@@ -34,5 +34,6 @@ digraph {
     hand -> vagabond [label="steal" style=dashed]
 
     {rank=same; deck, vagabond}
+    {rank=same; slot, discard}
   }
 }
