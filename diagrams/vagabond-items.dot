@@ -15,7 +15,9 @@ digraph {
 
     exhausted -> available [label="evening?"]
 
-    available -> exhausted [label="use"]
+    available -> exhausted [label="move\n(boot)"]
+    available -> exhausted [label="action\n(torch)"]
+    available -> exhausted [label="craft\n(hammer)"]
 
     exhausted -> damaged [label="battle"]
 
