@@ -13,7 +13,7 @@ digraph {
 
     supply -> exhausted [label="explore"]
 
-    exhausted -> available [label="evening?"]
+    exhausted -> available [label="birdsong"]
 
     available -> exhausted [label="move\n(boot)"]
     available -> exhausted [label="action\n(torch)"]
