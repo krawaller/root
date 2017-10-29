@@ -18,7 +18,6 @@ digraph {
 
     map -> alliance [label="intelligence" style="dashed"]
 
-    alliance -> supply [label="death" style="dashed"]
-
+    {rank=same; graveyard, supply}
   }
 }
