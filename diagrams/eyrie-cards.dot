@@ -9,7 +9,7 @@ digraph {
 
     deck -> hand [label="income"]
     deck -> hand [label="intelligence"]
-    hand -> discard [label="limit"]
+    hand -> discard [label="limit" style=dotted]
 
     hand -> played [label="intelligence"]
     hand -> played [label="manouver"]

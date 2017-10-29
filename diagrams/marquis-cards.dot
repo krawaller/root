@@ -8,7 +8,7 @@ digraph {
 
 
     deck -> hand [label="income"]
-    hand -> discard [label="limit"]
+    hand -> discard [label="limit" style=dotted]
 
     hand -> discard [label="craft"]
     hand -> discard [label="hire hawks"]
