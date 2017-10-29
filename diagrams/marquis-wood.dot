@@ -1,0 +1,15 @@
+digraph {
+  rankdir = LR;
+  bgcolor = transparent;
+
+  subgraph cluster_marquisunits {
+
+    label = "Marquis wood economy"
+
+    map -> map [label="throw"]
+
+    supply -> map [label="sawmill"]
+
+    map -> supply [label="build"]
+  }
+}
