@@ -12,6 +12,8 @@ digraph {
 
     hand -> discard [label="craft"]
 
+    opponent [style=dashed]
+
     hand -> opponent [label="pay"]
     hand -> opponent [label="give"]
     opponent -> hand [label="steal"]
