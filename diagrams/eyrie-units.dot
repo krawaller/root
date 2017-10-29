@@ -16,8 +16,11 @@ digraph {
 
     alliance [style="dashed"]
 
-    map -> alliance [label="intelligence" style="dashed"]
+    map -> alliance [label="intelligence"]
+
+    alliance -> graveyard [color=transparent]
 
     {rank=same; graveyard, supply}
+    {rank=same; map, alliance}
   }
 }
