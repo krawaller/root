@@ -1,0 +1,33 @@
+digraph {
+  rankdir = LR;
+  bgcolor = transparent;
+
+  subgraph cluster_vagabondcards {
+
+    label = "Vagabond relation economy"
+
+    indifferent -> friendly [label="give 1, buy 1"]
+    friendly -> confident [label="give 2, buy 1"]
+    confident-> ally [label="give 2, buy 1"]
+
+    ally -> confident -> friendly -> indifferent [style=dotted]
+
+    indifferent -> suspicious [label="steal 1"]
+    suspicious -> enemy [label="kill 1"]
+    enemy -> nemesis [label="kill 2"]
+
+    nemesis -> enemy -> suspicious -> indifferent [style=dotted]
+
+    indifferent -> enemy [label="kill 1"]
+
+    friendly -> enemy [label="kill 1"]
+
+    ally -> enemy [label="kill 1"]
+
+    suspicious -> confident
+
+    {rank=same; friendly, suspicious}
+    {rank=same; confident, enemy}
+    {rank=same; nemesis, ally}
+  }
+}
