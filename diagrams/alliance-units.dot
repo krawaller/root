@@ -26,5 +26,9 @@ digraph {
 
     map -> supply [label="death"]
 
+    eyrie [style="dashed"]
+    eyrie -> supporters [label="intelligence" style="dashed"]
+
+    {rank=same; eyrie, supporters}
   }
 }
