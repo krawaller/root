@@ -10,6 +10,8 @@ digraph {
 
     supply -> map [label="sawmill"]
 
+    map -> supply [label="burned" style=dashed]
+
     map -> supply [label="build"]
   }
 }
