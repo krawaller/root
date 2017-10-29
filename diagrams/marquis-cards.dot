@@ -12,7 +12,7 @@ digraph {
 
     hand -> discard [label="craft"]
     hand -> discard [label="hire hawks"]
-
+    hand -> discard [label="hospital"]
     hand -> hand [label="incite mob"]
 
     vagabond [style=dashed]

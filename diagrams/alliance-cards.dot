@@ -26,14 +26,13 @@ digraph {
 
     slot -> discard [label="incite mob"]
 
-    cat [style=dashed]
-    cat -> hand [label="incite mob" style=dashed]
+    deck -> hand [label="incite mob" style=dashed]
 
     vagabond [style=dashed]
     vagabond -> hand [label="pay" style=dashed]
     vagabond -> hand [label="give" style=dashed]
     hand -> vagabond [label="steal" style=dashed]
 
-    {rank=same; deck, cat, vagabond}
+    {rank=same; deck, vagabond}
   }
 }
