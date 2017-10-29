@@ -6,13 +6,11 @@ digraph {
 
     label = "Marquis unit economy"
 
-    keep -> map [label="move"]
-
     map -> map [label="move"]
 
     map -> supply [label="death"]
 
-    map -> keep [label="hospital"]
+    map -> map [label="hospital"]
 
     supply -> map [label="recruit"]
   }
