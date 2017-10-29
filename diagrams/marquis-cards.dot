@@ -1,0 +1,25 @@
+digraph {
+  rankdir = LR;
+  bgcolor = transparent;
+
+  subgraph cluster_marquisunits {
+
+    label = "Marquis card economy"
+
+
+    deck -> hand [label="income"]
+    hand -> discard [label="limit"]
+
+    hand -> discard [label="craft"]
+    hand -> discard [label="hire hawks"]
+
+    hand -> hand [label="incite mob"]
+
+    vagabond [style=dashed]
+    vagabond -> hand [label="pay" style=dashed]
+    vagabond -> hand [label="give" style=dashed]
+    hand -> vagabond [label="steal" style=dashed]
+
+    {rank=same;vagabond, deck}
+  }
+}

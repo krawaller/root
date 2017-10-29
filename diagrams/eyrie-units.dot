@@ -1,0 +1,24 @@
+digraph {
+  rankdir = LR;
+  bgcolor = transparent;
+
+  subgraph cluster_eyrieunits {
+
+    label = "Eyrie unit economy"
+
+    graveyard -> supply [label="turmoil"]
+
+    supply -> map [label="birdsong\nrecruitment"]
+
+    map -> graveyard [label="death"]
+
+    map -> map [label="manouver"]
+
+    alliance [style="dashed"]
+
+    map -> alliance [label="intelligence" style="dashed"]
+
+    alliance -> supply [label="death" style="dashed"]
+
+  }
+}

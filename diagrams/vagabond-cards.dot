@@ -1,0 +1,21 @@
+digraph {
+  rankdir = LR;
+  bgcolor = transparent;
+
+  subgraph cluster_vagabondcards {
+
+    label = "Vagabond card economy"
+
+
+    deck -> hand [label="income"]
+    hand -> discard [label="limit"]
+
+    hand -> discard [label="craft"]
+
+    hand -> opponent [label="pay"]
+    hand -> opponent [label="give"]
+    opponent -> hand [label="steal"]
+
+    {rank=same; deck, opponent}
+  }
+}

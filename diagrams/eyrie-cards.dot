@@ -1,0 +1,31 @@
+digraph {
+  rankdir = LR;
+  bgcolor = transparent;
+
+  subgraph cluster_eyriecards {
+
+    label = "Eyrie card economy"
+
+
+    deck -> hand [label="income"]
+    deck -> hand [label="intelligence"]
+    hand -> discard [label="limit"]
+
+    hand -> played [label="intelligence"]
+    hand -> played [label="manouver"]
+    hand -> played [label="build"]
+
+    played -> discard [label="discard"]
+    played -> discard [label="craft"]
+
+    cat [style=dashed]
+    cat -> hand [label="incite mob" style=dashed]
+
+    vagabond [style=dashed]
+    vagabond -> hand [label="pay" style=dashed]
+    vagabond -> hand [label="give" style=dashed]
+    hand -> vagabond [label="steal" style=dashed]
+
+    {rank=same; deck, cat, vagabond}
+  }
+}

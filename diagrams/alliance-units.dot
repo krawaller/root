@@ -1,0 +1,30 @@
+digraph {
+  rankdir = LR;
+  bgcolor = transparent;
+
+  subgraph cluster_allianceunits {
+
+    label = "Alliance unit economy"
+
+    supporters
+
+    supply
+
+    map -> map [label="conspiracy"]
+
+
+    supply -> supporters [label="each evening"]
+
+    supply -> supporters [label="outrage"]
+
+    supply -> supporters [label="educate"]
+
+
+    supporters -> map [label="train"]
+
+    supporters -> supply [label="conspiracy\npayment"]
+
+    map -> supply [label="death"]
+
+  }
+}

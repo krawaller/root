@@ -1,0 +1,39 @@
+digraph {
+  rankdir = LR;
+  bgcolor = transparent;
+
+  subgraph cluster_alliancecards {
+
+    label = "Alliance card economy"
+
+    deck -> hand [label="income"]
+
+    hand -> discard [label="limit"]
+
+    hand -> discard [label="craft"]
+
+    hand -> discard [label="educate"]
+
+    hand -> discard [label="train"]
+
+    slot -> hand [label="to play\nsecret"]
+
+    hand -> slot [label="secret"]
+
+    hand -> slot [label="conspiracy"]
+
+    slot -> discard [label="perform\nconspiracy"]
+
+    slot -> discard [label="incite mob"]
+
+    cat [style=dashed]
+    cat -> hand [label="incite mob" style=dashed]
+
+    vagabond [style=dashed]
+    vagabond -> hand [label="pay" style=dashed]
+    vagabond -> hand [label="give" style=dashed]
+    hand -> vagabond [label="steal" style=dashed]
+
+    {rank=same; deck, cat, vagabond}
+  }
+}

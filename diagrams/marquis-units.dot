@@ -1,0 +1,19 @@
+digraph {
+  rankdir = LR;
+  bgcolor = transparent;
+
+  subgraph cluster_marquisunits {
+
+    label = "Marquis unit economy"
+
+    keep -> map [label="move"]
+
+    map -> map [label="move"]
+
+    map -> supply [label="death"]
+
+    map -> keep [label="hospital"]
+
+    supply -> map [label="recruit"]
+  }
+}
