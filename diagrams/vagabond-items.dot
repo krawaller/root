@@ -1,0 +1,30 @@
+digraph {
+  rankdir = LR;
+  bgcolor = transparent;
+
+  subgraph cluster_vagabondcards {
+
+    label = "Vagabond item economy"
+
+    opponent [style=dashed]
+    opponent -> exhausted [label="buy"]
+
+    supply -> exhausted [label="craft"]
+
+    supply -> exhausted [label="explore"]
+
+    exhausted -> available [label="evening?"]
+
+    available -> exhausted [label="use"]
+
+    exhausted -> damaged [label="battle"]
+
+    available -> damaged [label="battle"]
+
+    damaged -> available [color=transparent label="repair" fontcolor=transparent]
+
+    damaged -> available [label="repair"]
+
+    {rank=same; available, damaged}
+  }
+}
