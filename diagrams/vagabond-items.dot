@@ -19,14 +19,15 @@ digraph {
     available -> exhausted [label="action\n(torch)"]
     available -> exhausted [label="craft\n(hammer)"]
 
-    exhausted -> damaged [label="battle"]
+    exhausted -> damaged [label="wounded" style=dashed]
 
-    available -> damaged [label="battle"]
-
-    damaged -> available [color=transparent label="repair" fontcolor=transparent]
 
     damaged -> available [label="repair"]
 
-    {rank=same; available, damaged}
+    available -> damaged [label="wounded" style=dashed]
+
+    damaged -> available [color=transparent label="repair" fontcolor=transparent]
+
+
   }
 }

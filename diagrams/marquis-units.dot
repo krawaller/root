@@ -8,9 +8,11 @@ digraph {
 
     map -> map [label="move"]
 
-    map -> supply [label="death"]
+    map -> supply [label="killed" style=dashed]
 
     map -> map [label="hospital"]
+
+    supply -> map [label="foo" color=transparent fontcolor=transparent]
 
     supply -> map [label="recruit"]
   }

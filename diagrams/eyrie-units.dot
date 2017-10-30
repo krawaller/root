@@ -10,7 +10,7 @@ digraph {
 
     supply -> map [label="birdsong\nrecruitment"]
 
-    map -> graveyard [label="death"]
+    map -> graveyard [label="killed" style=dashed]
 
     map -> map [label="manouver"]
 

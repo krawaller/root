@@ -24,7 +24,7 @@ digraph {
 
     supporters -> supply [label="conspiracy\npayment"]
 
-    map -> supply [label="death"]
+    map -> supply [label="killed" style="dashed"]
 
     eyrie [style="dashed"]
     eyrie -> supporters [label="intelligence" style="dashed"]
