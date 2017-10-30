@@ -11,7 +11,7 @@ digraph {
 
     supply -> exhausted [label="craft"]
 
-    supply -> exhausted [label="explore"]
+    ruins -> exhausted [label="explore"]
 
     exhausted -> available [label="birdsong"]
 
