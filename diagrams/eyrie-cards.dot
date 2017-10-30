@@ -12,8 +12,8 @@ digraph {
     hand -> discard [label="limit" style=dotted]
 
     hand -> played [label="intelligence"]
-    hand -> played [label="manouver"]
-    hand -> played [label="build"]
+    hand -> played [label="military"]
+    hand -> played [label="economy"]
 
     played -> discard [label="discard"]
     played -> discard [label="craft"]
