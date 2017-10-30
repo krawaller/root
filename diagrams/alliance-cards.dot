@@ -24,7 +24,7 @@ digraph {
 
     slot -> hand [label="performed\nconspiracy"]
 
-    slot -> discard [label="incite mob"]
+    slot -> discard [label="hideout\ndestroyed" style=dashed]
 
     deck -> hand [label="incite mob" style=dashed]
 
