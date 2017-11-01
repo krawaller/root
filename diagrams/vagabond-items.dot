@@ -30,5 +30,6 @@ digraph {
     damaged -> available [color=transparent label="repair" fontcolor=transparent]
 
     {rank=same; available, damaged}
+    
   }
 }
