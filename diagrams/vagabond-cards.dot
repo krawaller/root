@@ -8,9 +8,10 @@ digraph {
 
 
     deck -> hand [label="income"]
-    hand -> discard [label="limit" style=dotted]
+    hand -> discard [label="   limit" color=transparent fontcolor=transparent]
+    hand -> discard [label="   limit" style=dotted]
 
-    hand -> discard [label="craft"]
+    hand -> discard [label="   craft"]
 
     opponent [style=dashed]
 
@@ -19,5 +20,6 @@ digraph {
     opponent -> hand [label="steal"]
 
     {rank=same; deck, opponent}
+    {rank=same; hand, discard}
   }
 }
