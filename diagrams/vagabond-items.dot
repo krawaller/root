@@ -15,9 +15,11 @@ digraph {
 
     exhausted -> available [label="birdsong"]
 
-    available -> exhausted [label="move\n(boot)"]
-    available -> exhausted [label="action\n(torch)"]
-    available -> exhausted [label="craft\n(hammer)"]
+    available -> exhausted [label="move" color=transparent fontcolor=transparent]
+    available -> exhausted [label="move"]
+    available -> exhausted [label="action"]
+    available -> exhausted [label="craft"]
+    available -> exhausted [label="attack"]
 
     exhausted -> damaged [label="wounded" style=dashed]
 
@@ -30,6 +32,6 @@ digraph {
     damaged -> available [color=transparent label="repair" fontcolor=transparent]
 
     {rank=same; available, damaged}
-    
+
   }
 }
