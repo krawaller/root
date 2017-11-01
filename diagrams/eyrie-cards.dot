@@ -15,6 +15,7 @@ digraph {
     hand -> played [label="military"]
     hand -> played [label="economy"]
 
+    played -> discard [label="discard" color=transparent fontcolor=transparent]
     played -> discard [label="discard"]
     played -> discard [label="craft"]
 
@@ -26,5 +27,6 @@ digraph {
     hand -> vagabond [label="steal" style=dashed]
 
     {rank=same; deck, vagabond}
+    {rank=same; played, discard}
   }
 }
