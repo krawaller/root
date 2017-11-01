@@ -14,10 +14,9 @@ digraph {
 
 
     supply -> supporters [label="each evening"]
-
     supply -> supporters [label="outrage"]
-
     supply -> supporters [label="educate"]
+    supply -> supporters [label="aid" style="dashed"]
 
 
     supporters -> map [label="train"]
