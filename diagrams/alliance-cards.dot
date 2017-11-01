@@ -4,7 +4,7 @@ digraph {
 
   subgraph cluster_alliancecards {
 
-    label = "Alliance card economy"
+    label = "Alliance card economy\n "
 
     deck -> hand [label="income"]
 
@@ -27,6 +27,8 @@ digraph {
     slot -> discard [label="hideout\ndestroyed" style=dashed]
 
     deck -> hand [label="incite mob" style=dashed]
+
+    discard -> deck [label="reshuffle" style=dotted]
 
     vagabond [style=dashed]
     vagabond -> hand [label="pay" style=dashed]

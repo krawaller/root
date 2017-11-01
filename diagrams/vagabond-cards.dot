@@ -19,6 +19,8 @@ digraph {
     hand -> opponent [label="give"]
     opponent -> hand [label="steal"]
 
+    discard -> deck [label="reshuffle" style=dotted]
+
     {rank=same; deck, opponent}
     {rank=same; hand, discard}
   }

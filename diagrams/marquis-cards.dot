@@ -4,7 +4,7 @@ digraph {
 
   subgraph cluster_marquisunits {
 
-    label = "Marquis card economy"
+    label = "Marquis card economy\n "
 
 
     deck -> hand [label="income"]
@@ -19,6 +19,8 @@ digraph {
     vagabond -> hand [label="pay" style=dashed]
     vagabond -> hand [label="give" style=dashed]
     hand -> vagabond [label="steal" style=dashed]
+
+    discard -> deck [style=dotted label="reshuffle"]
 
     {rank=same;vagabond, deck}
   }

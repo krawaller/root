@@ -4,7 +4,7 @@ digraph {
 
   subgraph cluster_eyriecards {
 
-    label = "Eyrie card economy"
+    label = "Eyrie card economy\n "
 
 
     deck -> hand [label="income"]
@@ -25,6 +25,8 @@ digraph {
     vagabond -> hand [label="pay" style=dashed]
     vagabond -> hand [label="give" style=dashed]
     hand -> vagabond [label="steal" style=dashed]
+
+    discard -> deck [label="reshuffle" style=dotted]
 
     {rank=same; deck, vagabond}
     {rank=same; played, discard}
