@@ -11,14 +11,15 @@ digraph {
     friendly -> indifferent [style=dashed label="time"]
 
 
-    friendly -> confident [label="give 2"]
     friendly -> confident [label="give 2" color=transparent fontcolor=transparent]
-    confident -> friendly [style=dashed label="time"]
+    friendly -> confident [dir=back style=dashed label="time"]
+    friendly -> confident [label="give 2"]
 
-
-    confident -> ally [dir=back style=dashed label="time"]
     confident-> ally [label="give 2"]
     confident-> ally [label="give 2" color=transparent fontcolor=transparent]
+    confident -> ally [dir=back style=dashed label="time"]
+
+    confident -> enemy [label="  kill 1"]
 
     indifferent -> suspicious [label="steal 1" color=transparent fontcolor=transparent]
     indifferent -> suspicious [label="steal 1"]
