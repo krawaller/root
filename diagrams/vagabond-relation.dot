@@ -6,17 +6,33 @@ digraph {
 
     label = "Vagabond relation economy"
 
-    indifferent -> friendly [label="give 1, buy 1"]
-    friendly -> confident [label="give 2, buy 1"]
-    confident-> ally [label="give 2, buy 1"]
+    indifferent -> friendly [label="give 1" color=transparent fontcolor=transparent]
+    indifferent -> friendly [label="give 1"]
+    friendly -> indifferent [style=dashed label="time"]
 
-    ally -> confident -> friendly -> indifferent [style=dotted]
 
+    friendly -> confident [label="give 2"]
+    friendly -> confident [label="give 2" color=transparent fontcolor=transparent]
+    confident -> friendly [style=dashed label="time"]
+
+
+    confident -> ally [dir=back style=dashed label="time"]
+    confident-> ally [label="give 2"]
+    confident-> ally [label="give 2" color=transparent fontcolor=transparent]
+
+    indifferent -> suspicious [label="steal 1" color=transparent fontcolor=transparent]
     indifferent -> suspicious [label="steal 1"]
-    suspicious -> enemy [label="kill 1"]
-    enemy -> nemesis [label="kill 2"]
+    suspicious -> indifferent [style=dashed label="time"]
 
-    nemesis -> enemy -> suspicious -> indifferent [style=dotted]
+    suspicious -> enemy [label="kill 1" color=transparent fontcolor=transparent]
+    suspicious -> enemy [label="kill 1"]
+    enemy -> suspicious [style=dashed label="time"]
+
+    enemy -> nemesis [style=dashed label="time" dir=back color=transparent fontcolor=transparent]
+    enemy -> nemesis [label="kill 2"]
+    enemy -> nemesis [style=dashed label="time" dir=back]
+    
+
 
     indifferent -> enemy [label="kill 1"]
 
@@ -24,7 +40,8 @@ digraph {
 
     ally -> enemy [label="kill 1"]
 
-    {rank=same; friendly, suspicious}
+
+    {rank=same; friendly, indifferent, suspicious}
     {rank=same; confident, enemy}
     {rank=same; nemesis, ally}
   }
