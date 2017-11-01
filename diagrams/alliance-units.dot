@@ -21,8 +21,9 @@ digraph {
 
 
     supporters -> map [label="train"]
+    supporters -> map [label="build"]
 
-    supporters -> supply [label="conspiracy\npayment"]
+    supporters -> supply [label="conspiracy and\naction payment"]
 
     map -> supply [label="killed" style="dashed"]
 
