@@ -24,8 +24,6 @@ digraph {
 
     ally -> enemy [label="kill 1"]
 
-    suspicious -> confident
-
     {rank=same; friendly, suspicious}
     {rank=same; confident, enemy}
     {rank=same; nemesis, ally}

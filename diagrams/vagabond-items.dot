@@ -24,10 +24,11 @@ digraph {
 
     damaged -> available [label="repair"]
 
-    available -> damaged [label="wounded" style=dashed]
+    available -> damaged [label="    wounded" style=dashed color="transparent" fontcolor=transparent]
+    available -> damaged [label="    wounded" style=dashed color="black"]
 
     damaged -> available [color=transparent label="repair" fontcolor=transparent]
 
-
+    {rank=same; available, damaged}
   }
 }
