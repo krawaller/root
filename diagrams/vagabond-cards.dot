@@ -6,10 +6,9 @@ digraph {
 
     label = "Vagabond card economy"
 
-
     deck -> hand [label="income"]
     hand -> discard [label="   limit" color=transparent fontcolor=transparent]
-    hand -> discard [label="   limit" style=dotted arrowhead=empty]
+    hand -> discard [label="   limit" style=dotted arrowhead=empty color="#878b91" fontcolor="#878b91"]
 
     hand -> discard [label="   craft"]
 
@@ -19,7 +18,7 @@ digraph {
     hand -> opponent [label="give"]
     opponent -> hand [label="steal"]
 
-    discard -> deck [label="reshuffle" style=dotted arrowhead=empty]
+    discard -> deck [label="reshuffle" style=dotted arrowhead=empty color="#878b91" fontcolor="#878b91"]
 
     {rank=same; deck, opponent}
     {rank=same; hand, discard}

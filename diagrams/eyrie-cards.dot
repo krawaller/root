@@ -9,7 +9,7 @@ digraph {
 
     deck -> hand [label="income"]
     deck -> hand [label="intelligence"]
-    hand -> discard [label="limit" style=dotted arrowhead=empty]
+    hand -> discard [label="limit" style=dotted arrowhead=empty color="#878b91" fontcolor="#878b91"]
 
     hand -> played [label="intelligence"]
     hand -> played [label="military"]
@@ -26,7 +26,7 @@ digraph {
     vagabond -> hand [label="give" style=dashed]
     hand -> vagabond [label="steal" style=dashed]
 
-    discard -> deck [label="reshuffle" style=dotted arrowhead=empty]
+    discard -> deck [label="reshuffle" style=dotted arrowhead=empty color="#878b91" fontcolor="#878b91"]
 
     {rank=same; deck, vagabond}
     {rank=same; played, discard}

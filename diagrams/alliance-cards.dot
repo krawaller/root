@@ -9,7 +9,7 @@ digraph {
     deck -> hand [label="income"]
     deck -> hand [label="income" color=transparent fontcolor=transparent]
 
-    hand -> discard [label="limit" style=dotted arrowhead=empty]
+    hand -> discard [label="limit" style=dotted arrowhead=empty color="#878b91" fontcolor="#878b91"]
 
     hand -> discard [label="craft"]
 
@@ -29,7 +29,7 @@ digraph {
 
     deck -> hand [label="incite mob" style=dashed]
 
-    discard -> deck [label="reshuffle" style=dotted arrowhead=empty]
+    discard -> deck [label="reshuffle" style=dotted arrowhead=empty color="#878b91" fontcolor="#878b91"]
 
     vagabond [style=dashed]
     vagabond -> hand [label="pay" style=dashed]

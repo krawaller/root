@@ -8,11 +8,13 @@ digraph {
 
 
     deck -> hand [label="income"]
-    hand -> discard [label="limit" style=dotted arrowhead=empty]
+
 
     hand -> discard [label="craft"]
     hand -> discard [label="hire hawks"]
     hand -> discard [label="hospital"]
+    hand -> discard [label="limit" style=dotted arrowhead=empty color="#878b91" fontcolor="#878b91"]
+
     hand -> hand [label="incite mob"]
 
     vagabond [style=dashed]
@@ -20,7 +22,7 @@ digraph {
     vagabond -> hand [label="give" style=dashed]
     hand -> vagabond [label="steal" style=dashed]
 
-    discard -> deck [style=dotted label="reshuffle" arrowhead=empty]
+    discard -> deck [style=dotted label="reshuffle" arrowhead=empty color="#878b91" fontcolor="#878b91"]
 
     {rank=same;vagabond, deck}
   }
